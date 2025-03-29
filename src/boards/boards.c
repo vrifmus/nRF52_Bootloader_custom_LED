@@ -382,7 +382,7 @@ void led_tick(void) {
   if (cycle > half_cycle) {
       cycle = secondary_cycle_length - cycle;
   }
-  duty_cycle = 0x8f * cycle / half_cycle;
+  duty_cycle = 0x4f * cycle / half_cycle;
   #if LED_STATE_ON == 1
   duty_cycle = 0xff - duty_cycle;
   #endif
@@ -400,22 +400,34 @@ void led_state(uint32_t state) {
     case STATE_USB_MOUNTED:
       new_rgb_color = 0x00ff00;
       primary_cycle_length = 3000;
+      #ifdef LED_SECONDARY_PIN
+      secondary_cycle_length = 3000;
+      #endif
       break;
 
     case STATE_BOOTLOADER_STARTED:
     case STATE_USB_UNMOUNTED:
       new_rgb_color = 0xff0000;
       primary_cycle_length = 300;
+      #ifdef LED_SECONDARY_PIN
+      secondary_cycle_length = 300;
+      #endif
       break;
 
     case STATE_WRITING_STARTED:
       temp_color = 0xff0000;
       primary_cycle_length = 100;
+      #ifdef LED_SECONDARY_PIN
+      secondary_cycle_length = 300;
+      #endif
       break;
 
     case STATE_WRITING_FINISHED:
       // Empty means to unset any temp colors.
       primary_cycle_length = 3000;
+      #ifdef LED_SECONDARY_PIN
+      secondary_cycle_length = 3000;
+      #endif
       break;
 
     case STATE_BLE_CONNECTED:

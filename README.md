@@ -75,6 +75,8 @@ The lighting parameters are configured in the `src/boards/boards.c` file, starti
 * Fork this repository.
 * Make the necessary changes.
 * Commit and push.
+* Enable GitHub Actions on the corresponding tab.
+* Create an empty release with the tag 0.9.2.
 * Wait for GitHub Actions to finish building your bootloader.
 
 ## Local Build

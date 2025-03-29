@@ -7,7 +7,7 @@ I do not describe some details that are not important to me. I am only intereste
 ## My configs
 * [nice_nano_LED](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/nice_nano_LED)
 * [nice_nano_RGB](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/nice_nano_RGB)
-* [nice_nano_LED](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/kabarga)
+* [kabarga](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/kabarga)
 
 
 ## Burn & Upgrade with pre-built binaries

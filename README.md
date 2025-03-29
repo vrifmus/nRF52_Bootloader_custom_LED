@@ -129,7 +129,6 @@ compilation terminated due to -Wfatal-errors.
 cc1: all warnings being treated as errors
 make: *** [Makefile:412: _build/build-feather_nrf52840_express/bootloader_settings.o] Error 1`
 ```
-[original issues](https://github.com/adafruit/Adafruit_nRF52_Bootloader/issues/339)
 
 You are probably using arm-none-eabi-gcc version 14 or higher. You can check it with the following command:
 
@@ -149,3 +148,5 @@ Here is an example command to do this automatically:
 sed -i 's/ifneq (,$(filter 12.% 13.% 14.%,$(shell \$(CC) -dumpversion 2>\/dev\/nul
 l)))/ifneq (,$(filter 12.% 13.% 14.% 15.%,$(shell \$(CC) -dumpversion 2>\/dev\/null)))/g' "Makefile"
 ```
+
+[original issues](https://github.com/adafruit/Adafruit_nRF52_Bootloader/issues/339)

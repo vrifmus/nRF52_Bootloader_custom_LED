@@ -11,7 +11,7 @@ I do not describe some details that are not important to me. I am only intereste
 
 
 ## Burn & Upgrade with pre-built binaries
-In most cases, you just need to connect the keyboard to your computer, double-press the MCU reset button, and copy the UF2 bootloader file to the newly appeared device.
+In most cases, you just need to connect the keyboard to your computer, double-press the MCU reset button, and copy the UF2 bootloader file to the newly appeared device. If you need to flash the bootloader using a programmer, follow this [guide](https://github.com/joric/nrfmicro/wiki/Bootloader#swd-programmers).
 
 ## How to build
 

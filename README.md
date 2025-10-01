@@ -8,6 +8,7 @@ I do not describe some details that are not important to me. I am only intereste
 * [nice_nano_LED](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/nice_nano_LED)
 * [nice_nano_RGB](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/nice_nano_RGB)
 * [kabarga](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/kabarga)
+* [PNCATEHO MK Dose](https://github.com/aroum/nRF52_Bootloader_custom_LED/tree/master/src/boards/pncateho_mk_dose)
 
 
 ## Burn & Upgrade with pre-built binaries

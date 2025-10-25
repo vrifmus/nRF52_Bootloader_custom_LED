@@ -63,5 +63,5 @@
  #define UF2_BOARD_ID      "nRF52840-nicenano"
  #define UF2_INDEX_URL     "https://github.com/eztrow/m13"
  
- #endif // _NICENANO_H
+ #endif // _M13_H
  
